@@ -98,6 +98,14 @@ alias la='ls -A'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" \
 				"$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Git aliases
+alias gs='git status'
+alias glo='git log --oneline -n 10'
+alias glog='git log --oneline -n 10 --graph --decorate'
+alias gd='git diff'
+alias gds='git diff --staged'
+
 # Consider storing aliases in a separate file e.g., ~/.bash_aliases
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
