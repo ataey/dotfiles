@@ -156,3 +156,13 @@ unset __conda_setup
 # Specify launch directory
 root_folder=/home/azureuser/cloudfiles/code/Users/ataeyme/projects
 cd $root_folder
+
+# Add environment variables for custom CA bundle configuration
+export REQUESTS_CA_BUNDLE="/etc/ssl/certs/cacert.pem"
+export CURL_CA_BUNDLE="$REQUESTS_CA_BUNDLE"
+export NODE_EXTRA_CA_CERTS="$REQUESTS_CA_BUNDLE"
+export SSL_CERT_DIR=$(dirname "$REQUESTS_CA_BUNDLE")
+export SSL_CERT_FILE="$REQUESTS_CA_BUNDLE"
+export CERT_DIR=$(dirname "$REQUESTS_CA_BUNDLE")
+export GRPC_DEFAULT_SSL_ROOTS_FILE_PATH="$REQUESTS_CA_BUNDLE"
+export OTEL_EXPORTER_OTLP_CERTIFICATE="$REQUESTS_CA_BUNDLE"
