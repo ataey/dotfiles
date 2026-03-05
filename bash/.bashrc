@@ -120,6 +120,12 @@ alias gba='git branch --all'
 alias gbr='git branch --remote'
 alias gsh='git show HEAD'
 
+# uv (Rust-based Python package and project manager) aliases
+alias uvr='uv run'
+alias uva='uv add'
+alias uvrm='uv remove'
+alias uvt='uv tree'
+
 # Consider storing aliases in a separate file e.g., ~/.bash_aliases
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
