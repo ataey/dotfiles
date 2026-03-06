@@ -125,6 +125,9 @@ alias uvr='uv run'
 alias uva='uv add'
 alias uvrm='uv remove'
 alias uvt='uv tree'
+alias uvtd='uv tree --depth'
+alias uvtp='uv tree --package'
+alias uvh='uv --help | less'
 
 # Consider storing aliases in a separate file e.g., ~/.bash_aliases
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
