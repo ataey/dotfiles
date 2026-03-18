@@ -99,7 +99,14 @@ alias la='ls -A'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" \
 				"$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Git aliases
+# --help option alias
+hl() {
+    "$@" --help 2>&1 | less  # pipe help output to less pager
+}
+# usage examples: hl docker, hl uv, hl pip
+# note the above function doesn't work with other aliases, this is to be fixed
+
+# git aliases
 alias gs='git status'
 alias glo='git log --oneline -n 10'
 alias glog='git log --oneline -n 10 --graph --decorate'
