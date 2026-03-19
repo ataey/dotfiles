@@ -106,6 +106,10 @@ hl() {
 # usage examples: hl docker, hl uv, hl pip
 # note the above function doesn't work with other aliases, this is to be fixed
 
+# tree aliases
+alias tl='tree -L'  # specify depth limit
+alias tld='tree -d -L'  # specify depth limit, dirs only
+
 # Docker aliases
 alias db='docker build -t'
 alias di='docker images | less'
