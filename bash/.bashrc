@@ -106,6 +106,16 @@ hl() {
 # usage examples: hl docker, hl uv, hl pip
 # note the above function doesn't work with other aliases, this is to be fixed
 
+# Docker aliases
+alias db='docker build -t'
+alias di='docker images | less'
+alias dr='docker run --name'
+alias ds='docker start'
+alias dst='docker stop'
+alias drm='docker rm'
+alias dex='docker exec -it'
+alias dps='docker ps --all | less'
+
 # git aliases
 alias gs='git status'
 alias glo='git log --oneline -n 10'
