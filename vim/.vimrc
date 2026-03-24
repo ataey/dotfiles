@@ -8,6 +8,7 @@ call plug#end()
 autocmd vimenter * ++nested colorscheme gruvbox
 colorscheme gruvbox
 set background=dark
+set termguicolors
 
 syntax on
 set nu
