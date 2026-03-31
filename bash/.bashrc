@@ -170,21 +170,21 @@ if ! shopt -oq posix; then
 fi
 
 # Conda
+export CONDA_AUTO_ACTIVATE_BASE=false  # whether to auto-activate base conda env, must come before below conda init
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/ataey/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/anaconda/etc/profile.d/conda.sh"
+    if [ -f "/home/ataey/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ataey/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/anaconda/bin:$PATH"
+        export PATH="/home/ataey/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-# export CONDA_AUTO_ACTIVATE_BASE=false
 
 # Specify launch directory
 root_folder=/home/azureuser/cloudfiles/code/Users/ataeyme/projects
