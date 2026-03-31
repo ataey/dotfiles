@@ -106,6 +106,9 @@ hl() {
 # usage examples: hl docker, hl uv, hl pip
 # note the above function doesn't work with other aliases, this is to be fixed
 
+# less pager alias
+alias l='less'
+
 # tree aliases
 alias tl='tree -L'  # specify depth limit
 alias tld='tree -d -L'  # specify depth limit, dirs only
