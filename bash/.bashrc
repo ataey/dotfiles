@@ -112,6 +112,9 @@ alias l='less'
 # tree aliases
 alias tl='tree -L'  # specify depth limit
 alias tld='tree -d -L'  # specify depth limit, dirs only
+tlc() {
+  tree -d -L "${1:-2}" . | less
+}  # show tree of current dir with specified depth limit (default depth of 2)
 
 # Docker aliases
 alias db='docker build -t'
