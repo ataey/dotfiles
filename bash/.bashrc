@@ -149,7 +149,8 @@ alias gpo='git push origin'
 alias gb='git branch'
 alias gba='git branch --all'
 alias gbr='git branch --remote'
-alias gsh='git show HEAD'
+alias gsw='git show'
+alias gswh='git show HEAD'
 
 # uv (Rust-based Python package and project manager) aliases
 alias uvr='uv run'
