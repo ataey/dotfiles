@@ -152,6 +152,10 @@ alias gbr='git branch --remote'
 alias gsw='git show'
 alias gswh='git show HEAD'
 
+# github cli aliases
+alias ghil='gh issue list'
+alias ghiv='gh issue view'
+
 # uv (Rust-based Python package and project manager) aliases
 alias uvr='uv run'
 alias uva='uv add'
